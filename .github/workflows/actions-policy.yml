@@ -1,0 +1,14 @@
+name: Actions policy
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+      - unlabeled
+
+jobs:
+  actions-policy:
+    uses: toridori-inc/toridori-github-actions/.github/workflows/actions-policy.yml@main
